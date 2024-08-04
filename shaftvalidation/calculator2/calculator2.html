@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>shaft validation</title>
+  <link rel="stylesheet" href="calculator2.css"> 
+</head>
+<body>
+    <!-- the prefix is 11 for all inputs-->
+  <div class="container">
+    <div class="calculator-container">
+    <h2>VEHICLE INPUT</h2>
+    <label for="angleC111">1.Engine Fly up Speed(rpm):</label>
+    <input type="number" id="angleC111" name="angleC111" step="any" required><br>
+
+    <label for="angleD111">2.Over Drive Ratio:</label>
+    <input type="number" id="angleD111" name="angleD111" step="any" required><br>
+
+    <h2>PROPELLER SHAFT-1</h2>
+
+    <label for="angleE111">1.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+    <input type="number" id="angleE111" name="angleE111" step="any" required><br>
+
+    <label for="angleF111">2.THICKNESS OF THE TUBE(mm):</label>
+    <input type="number" id="angleF111" name="angleF111" step="any" required><br>
+
+    <label for="angleG111">3.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+    <input type="number" id="angleG111" name="angleG111" step="any" required><br>
+
+    <label for="myDropdown111">4.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+    <select id="myDropdown111">
+        <option value="0.92">coupling shaft</option>
+        <option value="0.75">drive shaft</option>
+    </select>
+    <br>
+     </div>
+      <div class="calculator-container1">
+        <h2>VEHICLE INPUT</h2>
+        <label for="angleC112">1.Engine Fly up Speed(rpm):</label>
+        <input type="number" id="angleC112" name="angleC112" step="any" required><br>
+
+        <label for="angleD112">2.Over Drive Ratio:</label>
+        <input type="number" id="angleD112" name="angleD112" step="any" required><br>
+
+        <h2>PROPELLER SHAFT-2</h2>
+
+        <label for="angleE112">1.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+        <input type="number" id="angleE112" name="angleE112" step="any" required><br>
+
+        <label for="angleF112">2.THICKNESS OF THE TUBE(mm):</label>
+        <input type="number" id="angleF112" name="angleF112" step="any" required><br>
+
+        <label for="angleG112">3.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+        <input type="number" id="angleG112" name="angleG112" step="any" required><br>
+
+        <label for="myDropdown112">4.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+        <select id="myDropdown112">
+            <option value="0.92">coupling shaft</option>
+            <option value="0.75">drive shaft</option>
+        </select>
+        <br>
+     </div>
+    </div>
+    <div class="container">
+      <div class="container2">
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+      </div>
+      <div class="container2">
+        <input type="button" value="Print" id="printButton" onclick="printPage()">
+      </div>
+      <div class="container2">
+        <button id="refresh-button" onclick="refreshContent()"> Refresh </button>
+      </div>
+    </div>
+  <div id="result"></div>
+  <script src="calculator2.js"></script>
+
+</body>
+
+</html>

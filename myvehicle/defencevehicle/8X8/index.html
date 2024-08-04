@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Series selection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="bo1">PROPELLER SHAFT CALCULATION 8X8 DEFENCE </div><br>
+  <div class="container">
+    <div class="calculator-container">
+      <h3>VEHICLE DATA </h3>
+      <label for="vehicleName">1. VEHICLE NAME:</label>
+      <input type="text" id="vehicleName" name="vehicleName" required>
+
+      <label for="vehicleName1">2.TYPE OF VEHICLE:</label>
+      <input type="text" id="vehicleName1" name="vehicleName1" required>
+      <hr>
+
+      <h3>SERIES SELECTION </h3>
+      <label for="angleA">1.ENGINE TORQUE (Nm):</label>
+      <input type="number" id="angleA" name="angleA" step="any" required><br>
+
+      <label for="angleB">2.CRAWLER GEAR/(FIRST GEAR RATIO)	:</label>
+      <input type="number" id="angleB" name="angleB" step="any" required>
+
+      <label for="angleC">3.REVERSE GEAR RATIO	:</label>
+      <input type="number" id="angleC" name="angleC" step="any" required>
+
+      <label for="angleD">4.AUXILLARY GEAR BOX RATIO:</label>
+      <input type="number" id="angleD" name="angleD" step="any" required><br>
+
+      <label for="angleE">5.REAR AXLE RATIO:</label>
+      <input type="number" id="angleE" name="angleE" step="any" required><br> 
+
+      <label for="angleF">6.HUB REDUCTION RATIO:</label>
+      <input type="number" id="angleF" name="angleF" step="any" required><br>
+
+      <label for="angleG">7.TYRE ROLING RADIUS(DLR) (mm):</label>
+      <input type="number" id="angleG" name="angleG" step="any" required><br>
+
+      <label for="angleH">8.REAR AXLE WEIGHT(OVER LOAD) (kg):</label>
+      <input type="number" id="angleH" name="angleH" step="any" required><br>
+
+      <label for="angleI">9.TYRE COEFF. OF FRICTION(MAX-WORST CASE):</label>
+      <input type="number" id="angleI" name="angleI" step="any" required><br>
+
+      <label for="angleJ">10.SHOCK FACTOR CHOSEN:</label>
+      <input type="number" id="angleJ" name="angleJ" step="any" required><br>
+
+      <label for="angleK">11.CLUTCH DROP FACTOR:</label>
+      <input type="number" id="angleK" name="angleK" step="any" required><br>
+      <hr>
+
+    
+
+      <!-- the prefix is 11 for all inputs-->
+      <h3>CRITICAL SPEED CALCULATOR </h3>
+      <h4>VEHICLE INPUT</h4>
+      <label for="angleC111">1.Engine Fly up Speed(rpm):</label>
+      <input type="number" id="angleC111" name="angleC111" step="any" required><br>
+
+      <label for="angleD111">2.Over Drive Ratio:</label>
+      <input type="number" id="angleD111" name="angleD111" step="any" required><br>
+
+      <h4>GB to AGB</h4>
+
+      <label for="angleE111">3.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+      <input type="number" id="angleE111" name="angleE111" step="any" required><br>
+
+      <label for="angleF111">4.THICKNESS OF THE TUBE(mm):</label>
+      <input type="number" id="angleF111" name="angleF111" step="any" required><br>
+
+      <label for="angleG111">5.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+      <input type="number" id="angleG111" name="angleG111" step="any" required><br>
+
+      <label for="myDropdown111">6.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+      <select id="myDropdown111">
+          <option value="0.92">coupling shaft</option>
+          <option value="0.75">drive shaft</option>
+      </select>
+      <br>
+      
+      <h4>AGB to RA1 </h4>
+          <label for="angleE112">7.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+          <input type="number" id="angleE112" name="angleE112" step="any" required><br>
+
+          <label for="angleF112">8.THICKNESS OF THE TUBE(mm):</label>
+          <input type="number" id="angleF112" name="angleF112" step="any" required><br>
+
+          <label for="angleG112">9.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+          <input type="number" id="angleG112" name="angleG112" step="any" required><br>
+
+          <label for="myDropdown112">10.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+          <select id="myDropdown112">
+              <option value="0.92">coupling shaft</option>
+              <option value="0.75">drive shaft</option>
+          </select>
+          <br>
+       </div>
+       <div class="calculator-container">
+      <h4>RA1 to RA2 </h4>
+        <label for="angleE113">11.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+        <input type="number" id="angleE113" name="angleE113" step="any" required><br>
+
+        <label for="angleF113">12.THICKNESS OF THE TUBE(mm):</label>
+        <input type="number" id="angleF113" name="angleF113" step="any" required><br>
+
+        <label for="angleG113">13.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+        <input type="number" id="angleG113" name="angleG113" step="any" required><br>
+
+        <label for="myDropdown113">14.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+        <select id="myDropdown113">
+            <option value="0.92">coupling shaft</option>
+            <option value="0.75">drive shaft</option>
+        </select>
+        <br>
+      <h4>AGB to FA2 </h4>
+        <label for="angleE114">15.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+        <input type="number" id="angleE114" name="angleE114" step="any" required><br>
+
+        <label for="angleF114">16.THICKNESS OF THE TUBE(mm):</label>
+        <input type="number" id="angleF114" name="angleF114" step="any" required><br>
+
+        <label for="angleG114">17.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+        <input type="number" id="angleG114" name="angleG114" step="any" required><br>
+
+        <label for="myDropdown114">18.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+        <select id="myDropdown114">
+            <option value="0.92">coupling shaft</option>
+            <option value="0.75">drive shaft</option>
+        </select>
+      <h4>FA2 to FA1 </h4>
+      <label for="angleE115">19.PROPELLER SHAFT OUTER DIAMETER(mm):</label>
+      <input type="number" id="angleE115" name="angleE115" step="any" required><br>
+
+      <label for="angleF115">20.THICKNESS OF THE TUBE(mm):</label>
+      <input type="number" id="angleF115" name="angleF115" step="any" required><br>
+
+      <label for="angleG115">21.PROPELLER SHAFT LENGTH- UJ to UJ(mm):</label>
+      <input type="number" id="angleG115" name="angleG115" step="any" required><br>
+
+      <label for="myDropdown115">22.CHOOSE THE TYPE OF PROPELLER SHAFT:</label>
+      <select id="myDropdown115">
+          <option value="0.92">coupling shaft</option>
+          <option value="0.75">drive shaft</option>
+      </select>
+      <hr>
+    
+      <h3>SLIP LENGTH CALCULATOR </h3>
+      <label for="angleA2">1. Max. Length Of Layout (mm):</label>
+      <input type="number" id="angleA2" name="angleA2" step="any" required><br>
+
+      <label for="angleB2">2. Min. Length of Layout (mm):</label>
+      <input type="number" id="angleB2" name="angleB2" step="any" required><br>
+
+      <label for="angleC2">3. Stand Out Length (mm):</label>
+      <input type="number" id="angleC2" name="angleC2" step="any" required><br>
+
+      <label for="angleD2">4. Top View Length (mm):</label>
+      <input type="number" id="angleD2" name="angleD2" step="any" required><br>
+
+      <label for="angleF2">5. Max. Available Slip Length (mm):</label>
+      <input type="number" id="angleF2" name="angleF2" step="any" required><br>
+
+      <label for="angleG2">6. Existing Part (Collapsed Length in Drawing) (mm):</label>
+      <input type="number" id="angleG2" name="angleG2" step="any" required><br>
+
+      <label for="angleH2">7. Existing Part (Slip Length) (mm):</label>
+      <input type="number" id="angleH2" name="angleH2" step="any" required><br>
+      <hr>
+  
+      <h3>TORSIONAL STIFFNESS </h3>
+      <label for="angleA3">1. PROPELLER SHAFT OUTER DIAMETER (mm):</label>
+      <input type="number" id="angleA3" name="angleA3" step="any" required><br>
+
+      <label for="angleB3">2. PROPELLER SHAFT TUBE LENGTH (mm):</label>
+      <input type="number" id="angleB3" name="angleB3" step="any" required><br>
+
+      <label for="angleC3">3. PROPELLER SHAFT INNER DIAMETER (mm):</label>
+      <input type="number" id="angleC3" name="angleC3" step="any" required><br>
+
+      <label for="angleD3">4. MODULUS OF RIGIDITY OF SHAFT MATERIAL (N/mm²):</label>
+      <input type="number" id="angleD3" name="angleD3" step="any" required><br>
+
+      <label for="angleE3">5. DESIGN TORQUE OF PROPELLER SHAFT (Nm):</label>
+      <input type="number" id="angleE3" name="angleE3" step="any" required><br>
+      <hr>
+    
+  </div>
+<div class="calculator-container">
+      <h3>BENDING CRITICAL ANGLE </h3>
+
+      <label for="angleA4">1.Tube outer diameter(D):</label>
+      <input type="number" id="angleA4" name="angleA4" step="any" required><br>
+
+      <label for="angleB4">2.Tube inner diameter(d):</label>
+      <input type="number" id="angleB4" name="angleB4" step="any" required><br>
+
+      <label for="angleC4">3.Length of prop shaft center part(L):</label>
+      <input type="number" id="angleC4" name="angleC4" step="any" required><br>
+
+      <label for="angleD4">4.The safety factor:</label>
+      <input type="number" id="angleD4" name="angleD4" step="any" required><br>
+      <hr>
+      <h3>PERMISSIBLE DEFLECTION ANGLE </h3>
+
+      <label for="angleA5">1.Angle on side view:</label>
+      <input type="number" id="angleA5" name="angleA5" step="any" required><br>
+
+      <label for="angleB5">2.Angle on Top view:</label>
+      <input type="number" id="angleB5" name="angleB5" step="any" required><br>
+
+      <label for="angleC5">3.propeller shaft speed(rpm) :</label>
+      <input type="number" id="angleC5" name="angleC5" step="any" required><br>
+      <hr>
+     
+      <h3>BETA ANGLE </h3>
+        <h4>GB to AGB</h4>
+           <div class="container2">
+           <div class="calculator-container2">
+          <h3>laden </h3>
+          <label for="angleA6">1.Angle on side view, GB to AGB:</label>
+          <input type="number" id="angleA6" name="angleA6" step="any" required><br>
+
+          <label for="angleB6">2.Angle on Top view, GB to AGB:</label>
+          <input type="number" id="angleB6" name="angleB6" step="any" required><br>
+
+          <label for="angleC6">3.Angle on Side view, AGB to GB:</label>
+          <input type="number" id="angleC6" name="angleC6" step="any" required><br>
+
+          <label for="angleD6">4.Angle on TOP view, AGB to GB:</label>
+          <input type="number" id="angleD6" name="angleD6" step="any" required><br>
+          </div>
+          <div class="calculator-container2">
+          <h3>unladen </h3>
+          <label for="angleA6i">1. Angle on side view, GB to AGB:</label>
+          <input type="number" id="angleA6i" name="angleA6i" step="any" required><br>
+
+          <label for="angleB6i">2. Angle on Top view, GB to AGB:</label>
+          <input type="number" id="angleB6i" name="angleB6i" step="any" required><br>
+
+          <label for="angleC6i">3. Angle on Side view, AGB to GB:</label>
+          <input type="number" id="angleC6i" name="angleC6i" step="any" required><br>
+
+          <label for="angleD6i">4. Angle on TOP view, AGB to GB:</label>
+          <input type="number" id="angleD6i" name="angleD6i" step="any" required><br>
+
+          </div>
+          </div>
+          <hr>
+    
+          <h4>AGB to RA1 </h4>
+          <div class="container2">
+          <div class="calculator-container2">
+          <h3>laden </h3>
+          <label for="angleA61">5.Angle on side view, AGB to RA1:</label>
+          <input type="number" id="angleA61" name="angleA61" step="any" required><br>
+
+          <label for="angleB61">6.Angle on Top view, AGB to RA1:</label>
+          <input type="number" id="angleB61" name="angleB61" step="any" required><br>
+
+          <label for="angleC61">7.Angle on Side view, RA1 to AGB :</label>
+          <input type="number" id="angleC61" name="angleC61" step="any" required><br>
+
+          <label for="angleD61">8.Angle on TOP view, RA1 to AGB:</label>
+          <input type="number" id="angleD61" name="angleD61" step="any" required><br>
+          </div>
+          <div class="calculator-container2">
+          <h3>unladen </h3>
+          <label for="angleA61i">5. Angle on side view, AGB to RA1:</label>
+          <input type="number" id="angleA61i" name="angleA61i" step="any" required><br>
+
+          <label for="angleB61i">6. Angle on Top view, AGB to RA1:</label>
+          <input type="number" id="angleB61i" name="angleB61i" step="any" required><br>
+
+          <label for="angleC61i">7. Angle on Side view, RA1 to AGB:</label>
+          <input type="number" id="angleC61i" name="angleC61i" step="any" required><br>
+
+          <label for="angleD61i">8. Angle on TOP view, RA1 to AGB:</label>
+          <input type="number" id="angleD61i" name="angleD61i" step="any" required><br>
+
+           </div>
+          </div>
+        <hr>
+     </div>
+      <div class="calculator-container">
+
+          <h4>RA1 to RA2 </h4>
+          <div class="container2">
+          <div class="calculator-container2">
+          <h3>laden </h3>
+          <label for="angleA62">9.Angle on side view, RA1 to RA2:</label>
+          <input type="number" id="angleA62" name="angleA62" step="any" required><br>
+
+          <label for="angleB62">10.Angle on Top view, RA1 to RA2:</label>
+          <input type="number" id="angleB62" name="angleB62" step="any" required><br>
+
+          <label for="angleC62">11.Angle on Side view, RA2 to RA1:</label>
+          <input type="number" id="angleC62" name="angleC62" step="any" required><br>
+
+          <label for="angleD62">12.Angle on TOP view, RA2 to RA1:</label>
+          <input type="number" id="angleD62" name="angleD62" step="any" required><br>
+          </div>
+         <div class="calculator-container2">
+          <h3>unladen </h3>
+          <label for="angleA62i">9. Angle on side view, RA1 to RA2:</label>
+          <input type="number" id="angleA62i" name="angleA62i" step="any" required><br>
+
+          <label for="angleB62i">10. Angle on Top view, RA1 to RA2:</label>
+          <input type="number" id="angleB62i" name="angleB62i" step="any" required><br>
+
+          <label for="angleC62i">11. Angle on Side view, RA2 to RA1:</label>
+          <input type="number" id="angleC62i" name="angleC62i" step="any" required><br>
+
+          <label for="angleD62i">12. Angle on TOP view, RA2 to RA1:</label>
+          <input type="number" id="angleD62i" name="angleD62i" step="any" required><br>
+         </div>
+         </div>
+          <hr>
+          <h4>AGB to FA2 </h4>
+          <div class="container2">
+          <div class="calculator-container2">
+          <h3>laden </h3>
+          <label for="angleA63">13.Angle on side view, AGB to FA2:</label>
+          <input type="number" id="angleA63" name="angleA63" step="any" required><br>
+
+          <label for="angleB63">14.Angle on Top view, AGB to FA2:</label>
+          <input type="number" id="angleB63" name="angleB63" step="any" required><br>
+
+          <label for="angleC63">15.Angle on Side view, FA2 to AGB:</label>
+          <input type="number" id="angleC63" name="angleC63" step="any" required><br>
+
+          <label for="angleD63">16.Angle on TOP view, FA2 to AGB:</label>
+          <input type="number" id="angleD63" name="angleD63" step="any" required><br>
+          </div>
+          <div class="calculator-container2">
+          <h3>unladen </h3>
+          <label for="angleA63i">13. Angle on side view, AGB to FA2:</label>
+          <input type="number" id="angleA63i" name="angleA63i" step="any" required><br>
+
+          <label for="angleB63i">14. Angle on Top view, AGB to FA2:</label>
+          <input type="number" id="angleB63i" name="angleB63i" step="any" required><br>
+
+          <label for="angleC63i">15. Angle on Side view, FA2 to AGB:</label>
+          <input type="number" id="angleC63i" name="angleC63i" step="any" required><br>
+
+          <label for="angleD63i">16. Angle on TOP view, FA2 to AGB:</label>
+          <input type="number" id="angleD63i" name="angleD63i" step="any" required><br>
+          </div>
+          </div>
+          <hr>
+      <h4>FA1 to FA2 </h4>
+        <div class="container2">
+         <div class="calculator-container2">
+          <h3>laden </h3>
+      <label for="angleA64">17.Angle on side view, FA1 to FA2:</label>
+      <input type="number" id="angleA64" name="angleA64" step="any" required><br>
+
+      <label for="angleB64">18.Angle on Top view, FA1 to FA2:</label>
+      <input type="number" id="angleB64" name="angleB64" step="any" required><br>
+
+      <label for="angleC64">19.Angle on Side view, FA2 to FA1:</label>
+      <input type="number" id="angleC64" name="angleC64" step="any" required><br>
+
+      <label for="angleD64">20.Angle on TOP view, FA2 to FA1:</label>
+      <input type="number" id="angleD64" name="angleD64" step="any" required><br>
+      <hr>
+            </div>
+            <div class="calculator-container2">
+            <h3>unladen </h3>
+        <label for="angleA64i">17. Angle on side view, FA1 to FA2:</label>
+        <input type="number" id="angleA64i" name="angleA64i" step="any" required><br>
+
+        <label for="angleB64i">18. Angle on Top view, FA1 to FA2:</label>
+        <input type="number" id="angleB64i" name="angleB64i" step="any" required><br>
+
+        <label for="angleC64i">19. Angle on Side view, FA2 to FA1:</label>
+        <input type="number" id="angleC64i" name="angleC64i" step="any" required><br>
+
+        <label for="angleD64i">20. Angle on TOP view, FA2 to FA1:</label>
+        <input type="number" id="angleD64i" name="angleD64i" step="any" required><br>
+               </div>
+               </div>
+        <hr>
+      <h3>TORSIONAL EXCITATION </h3>
+      <label for="angleE7">1.Propeller shaft speed (considering same as Flyup) (rpm):</label>
+      <input type="number" id="angleE7" name="angleE7" step="any" required><br>
+        <hr><hr>
+
+        <h4>Extra part</h4>
+
+        <label for="vehicleName2">Date/Rev:</label>
+        <input type="text" id="vehicleName2" name="vehicleName2" required>
+
+        <label for="vehicleName3">Prepared By:</label>
+        <input type="text" id="vehicleName3" name="vehicleName3" required>
+
+        <label for="vehicleName4">Reviewed by:</label>
+        <input type="text" id="vehicleName4" name="vehicleName4" required>
+
+        <label for="vehicleName5">Approved by:</label>
+        <input type="text" id="vehicleName5" name="vehicleName5" required>
+
+    </div>
+  </div>
+    <div class="container">
+      <div class="container2">
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+      </div>
+      <div class="container2">
+        <input type="button" value="Print" id="printButton" onclick="printPage()">
+      </div>
+      <div class="container2">
+        <button id="refresh-button" onclick="refreshContent()"> Refresh </button>
+      </div>
+    </div>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

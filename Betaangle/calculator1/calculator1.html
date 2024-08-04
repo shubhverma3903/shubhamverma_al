@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Angles Calculator for 1 shaft</title>
+    <link rel="stylesheet" href="calculator1.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <form id="angleForm">
+        <h2>Resultant Angle Calculator for 1 shafts </h2>
+
+        <div class="container">
+        <div class="calculator-container">
+        <h3> Laden</h3>
+        <label for="angleA">1.Angle on side view, Engine angle to DS:</label>
+        <input type="number" id="angleA" name="angleA" step="any" required><br>
+
+        <label for="angleB">2.Angle on Top view, Engine angle to DS:</label>
+        <input type="number" id="angleB" name="angleB" step="any" required><br>
+
+        <label for="angleC">3.Angle on Side view, DS to RA1:</label>
+        <input type="number" id="angleC" name="angleC" step="any" required><br>  
+
+        <label for="angleD">4.Angle on TOP view, DS to RA1:</label>
+        <input type="number" id="angleD" name="angleD" step="any" required><br>
+        </div>
+        <div class="calculator-container">
+                <h3>Unladen</h3>
+                <label for="angleAu">1. Angle on side view, Engine angle to DS:</label>
+                <input type="number" id="angleAu" name="angleAu" step="any" required><br>
+
+                <label for="angleBu">2. Angle on Top view, Engine angle to DS:</label>
+                <input type="number" id="angleBu" name="angleBu" step="any" required><br>
+
+                <label for="angleCu">3. Angle on Side view, DS to RA1:</label>
+                <input type="number" id="angleCu" name="angleCu" step="any" required><br>  
+
+                <label for="angleDu">4. Angle on TOP view, DS to RA1:</label>
+                <input type="number" id="angleDu" name="angleDu" step="any" required><br>
+
+                </div> 
+            </div> 
+                
+
+
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+    </form>
+
+    <div id="result"></div> 
+      
+    <script src="calculator1.js"></script> 
+</body>
+</html>

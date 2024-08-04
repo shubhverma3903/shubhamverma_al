@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0%;
+  border-radius: 8px;
+  border: 2px black solid;
+  height: auto;
+  max-width: 750px;  
+  background-image:url("shubh.jpg");
+  background-size:1900px 900px;
+}
+
+
+#container {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-image: linear-gradient(to bottom right,#2329e7,#cb6410,#32ec51);
+}
+
+.calculator {
+  display: none;
+}
+
+button {
+  background-color: #37e208;
+    margin: auto;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}

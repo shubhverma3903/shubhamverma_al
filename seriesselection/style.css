@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0%;
+  border-radius: 8px;
+  border: 2px black solid;
+  height: auto;
+  max-width: 450px;  
+  background-image:url("p1.jpg");
+  background-size:1900px 900px;
+}
+
+#angleForm {
+   background-image: linear-gradient(to bottom right,#9c7ec9,#e0e694,#8bc1a0);
+}
+.sentence {
+    display: inline-block;
+    margin-right: 100px; /* Adjust the spacing as needed */
+}
+
+/* Header styling */
+h2 {
+  text-align: center;
+  color:black;
+  border: 3px solid black;
+  height: 50px;
+  width: 400px;
+  background-image: linear-gradient(to bottom right,#5161d6,#3fbcd5,#e571a9);
+  border-radius: 9px;
+  font-style:oblique
+}
+
+/* Form container styling */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.box {
+  height: auto;
+  width: 400px;
+  text-align: left;
+  border: 1px black solid;
+  margin: 0 auto;
+  padding: 8px;
+  background-color: #ded3de;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.box1 {
+  height: 20px;
+  width: 200px;
+  text-align: centre;
+  border: 1px black solid;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #40a7d4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.box2 {
+  height: auto;
+  max-width: 500px;
+  border: 1px black solid;
+  margin: 0 auto;
+  padding: 5px;
+  background-image: linear-gradient(to bottom right,#9e89d7,#84e1c2);
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Input field styling */
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+#printButton {
+  margin-top: 10px;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 4px;
+   background-color: #0817e2;
+  cursor: pointer;
+}
+
+/* Button styling */
+button {
+  background-color: #37e208;
+  margin-left: auto;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.highlighted {
+  background-color: green;
+  font-size: 25px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #08aa0b;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+}

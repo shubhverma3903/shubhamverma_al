@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: auto;
+  padding: 0%;
+}
+
+#angleForm {
+   background-image: linear-gradient(to bottom right,#db94f5,#74a5be);
+}
+
+/* Header styling */
+h2 {
+  text-align: center;
+  color:black;
+  border: 3px solid black;
+  height: 50px;
+  width: 700px;
+  background-image: linear-gradient(to bottom right,#d14755,#4545a1,#32ec51);
+  border-radius: 9px;
+  font-style:oblique
+}
+h3 {
+  text-align: center;
+  color:black;
+  border: 3px solid black;
+  height: 50px;
+  border-radius: 9px;
+  font-style:oblique
+}
+
+/* Form container styling */
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.calculator-container {
+  flex: 1;
+  padding: 20px;
+  border: 3px solid #007bff;
+  background-color: #f0bcbc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.calculator-container1 {
+  flex: 1;
+  padding: 20px;
+  border: 3px solid #00e1ff;
+  background-color: #87bdf7;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+#betaAngle71,#betaAngle72,#betaAngle73,#betaAngle71u,#betaAngle72u,#betaAngle73u {
+  font-size: 18px;
+  padding-left: 5px;
+  border: 1px solid #6c757d;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+/* Label styling */
+label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 3px;
+}
+
+/* Input field styling */
+input[type="number"] {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Button styling */
+button {
+  background-color: #37e208;
+  margin-left: auto;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #08aa0b;
+}
+
+#result {
+  margin-top: 20px;
+  text-align: center;
+}
+select#myDropdown7,select#myDropdown7u {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px; /* Increase the margin to create space below the dropdown */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}

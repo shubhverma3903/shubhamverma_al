@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bending critical angle</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+
+<body>
+
+    <form id="angleForm">
+        <h2>Bending critical angle </h2>
+
+        <label for="angleA">1.Tube outer diameter(D):</label>
+        <input type="number" id="angleA" name="angleA" step="any" required><br>
+
+        <label for="angleB">2.Tube inner diameter(d):</label>
+        <input type="number" id="angleB" name="angleB" step="any" required><br>
+
+        <label for="angleC">3.Length of prop shaft center part(L):</label>
+        <input type="number" id="angleC" name="angleC" step="any" required><br>
+
+        <label for="angleD">4.The safety factor:</label>
+        <input type="number" id="angleD" name="angleD" step="any" required><br>
+
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

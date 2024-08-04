@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Beta Angle Calculator</h1>
+        <label for="calculatorChoice">Enter number of shaft:</label>
+        <input type="number" id="calculatorChoice" min="1" max="4">
+        <button onclick="showCalculator()">click here</button>
+
+        <div id="calculator1" class="calculator">
+
+            <div id="calc1-content"></div>
+        </div>
+
+        <div id="calculator2" class="calculator">
+
+            <div id="calc2-content"></div>
+        </div>
+
+        <div id="calculator3" class="calculator">
+
+            <div id="calc3-content"></div>
+        </div>
+
+        <div id="calculator4" class="calculator">
+
+            <div id="calc4-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

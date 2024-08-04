@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <form id="angleForm">
+    <h2>TORSIONAL EXCITATION </h2>
+    <div class="container">
+    <div class="calculator-container">
+       <h3>Laden  </h3>
+    <label for="angleA7">1.Side view, UJ1 angle:</label>
+    <input type="number" id="angleA7" name="angleA7" step="any" required><br>
+
+    <label for="angleB7">2.Top view, UJ1 angle:</label>
+    <input type="number" id="angleB7" name="angleB7" step="any" required><br>
+
+    <label for="angleC7">3.Side view, UJ2 angle:</label>
+    <input type="number" id="angleC7" name="angleC7" step="any" required><br>  
+
+    <label for="angleD7">4.Top view, UJ2 angle:</label>
+    <input type="number" id="angleD7" name="angleD7" step="any" required><br>
+
+    <label for="angleE7">5.Side view, UJ3 angle:</label>
+    <input type="number" id="angleE7" name="angleE7" step="any" required><br>  
+
+    <label for="angleF7">6.Top view, UJ3 angle:</label>
+    <input type="number" id="angleF7" name="angleF7" step="any" required><br>
+
+    <label for="angleG7">7.Side view, UJ4 angle:</label>
+    <input type="number" id="angleG7" name="angleG7" step="any" required><br>  
+
+    <label for="angleH7">8.Top view, UJ4 angle:</label>
+    <input type="number" id="angleH7" name="angleH7" step="any" required><br>
+
+    <label for="angleI7">9.Side view, UJ5 angle:</label>
+    <input type="number" id="angleI7" name="angleI7" step="any" required><br>  
+
+    <label for="angleJ7">10.Top view, UJ5 angle:</label>
+    <input type="number" id="angleJ7" name="angleJ7" step="any" required><br>
+
+    <label for="angleK78">11.Propeller shaft speed (considering same as Flyup) (rpm):</label>
+    <input type="number" id="angleK78" name="angleK78" step="any" required><br>
+
+    <label for="myDropdown">12.PHASE:</label>
+    <select id="myDropdown">
+        <option value="PCCP">P-C-C-P</option>
+        <option value="CPCP">C-P-C-P</option>
+        <option value="CCPP">C-C-P-P</option>
+        <option value="CCCP">C-C-C-P</option>
+        <option value="PPCP">P-P-C-P</option>
+        <option value="PPPP">P-P-P-P</option>
+        <option value="CPPP">C-P-P-P</option>
+        <option value="PCPP">P-C-P-P</option>
+    </select>
+
+      </div>
+      <div class="calculator-container">
+        <h3>Unladen</h3>
+
+      <label for="angleA7u">1. Side view, UJ1 angle:</label>
+      <input type="number" id="angleA7u" name="angleA7u" step="any" required><br>
+
+      <label for="angleB7u">2. Top view, UJ1 angle:</label>
+      <input type="number" id="angleB7u" name="angleB7u" step="any" required><br>
+
+      <label for="angleC7u">3. Side view, UJ2 angle:</label>
+      <input type="number" id="angleC7u" name="angleC7u" step="any" required><br>
+
+      <label for="angleD7u">4. Top view, UJ2 angle:</label>
+      <input type="number" id="angleD7u" name="angleD7u" step="any" required><br>
+
+      <label for="angleE7u">5. Side view, UJ3 angle:</label>
+      <input type="number" id="angleE7u" name="angleE7u" step="any" required><br>
+
+      <label for="angleF7u">6. Top view, UJ3 angle:</label>
+      <input type="number" id="angleF7u" name="angleF7u" step="any" required><br>
+
+      <label for="angleG7u">7. Side view, UJ4 angle:</label>
+      <input type="number" id="angleG7u" name="angleG7u" step="any" required><br>
+
+      <label for="angleH7u">8. Top view, UJ4 angle:</label>
+      <input type="number" id="angleH7u" name="angleH7u" step="any" required><br>
+
+      <label for="angleI7u">9. Side view, UJ5 angle:</label>
+      <input type="number" id="angleI7u" name="angleI7u" step="any" required><br>
+
+      <label for="angleJ7u">10. Top view, UJ5 angle:</label>
+      <input type="number" id="angleJ7u" name="angleJ7u" step="any" required><br>
+
+      <label for="angleK78u">11. Propeller shaft speed (considering same as Flyup) (rpm):</label>
+      <input type="number" id="angleK78u" name="angleK78u" step="any" required><br>
+
+      <label for="myDropdownu">12. PHASE:</label>
+      <select id="myDropdownu" name="myDropdownu">
+          <option value="PCCP">P-C-C-P</option>
+          <option value="CPCP">C-P-C-P</option>
+          <option value="CCPP">C-C-P-P</option>
+          <option value="CCCP">C-C-C-P</option>
+          <option value="PPCP">P-P-C-P</option>
+          <option value="PPPP">P-P-P-P</option>
+          <option value="CPPP">C-P-P-P</option>
+          <option value="PCPP">P-C-P-P</option>
+      </select>
+      </div>
+      </div>
+    <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+  </form>
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torsional Stiffness</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <form id="angleForm">
+        <h2>TORSIONAL STIFFNESS </h2>
+
+        <label for="angleA3">1. PROPELLER SHAFT OUTER DIAMETER (mm):</label>
+        <input type="number" id="angleA3" name="angleA3" step="any" required><br>
+
+        <label for="angleB3">2. PROPELLER SHAFT TUBE LENGTH (mm):</label>
+        <input type="number" id="angleB3" name="angleB3" step="any" required><br>
+
+        <label for="angleC3">3. PROPELLER SHAFT INNER DIAMETER (mm):</label>
+        <input type="number" id="angleC3" name="angleC3" step="any" required><br>
+
+        <label for="angleD3">4. MODULUS OF RIGIDITY OF SHAFT MATERIAL (N/mm²):</label>
+        <input type="number" id="angleD3" name="angleD3" step="any" required><br>
+
+        <label for="angleE3">5. DESIGN TORQUE OF PROPELLER SHAFT (Nm):</label>
+        <input type="number" id="angleE3" name="angleE3" step="any" required><br>
+
+
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+    </form>
+
+    <div id="result"></div> 
+      <style>
+          .highlighted {
+              background-color: green;
+              /* Add any other styling you want */
+          }
+      </style>
+
+    <script src="script.js"></script> 
+</body>
+</html>

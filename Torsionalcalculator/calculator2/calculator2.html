@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equivalent Angles Calculator</title>
+    <link rel="stylesheet" href="calculator2.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <form id="angleForm">
+        <h2>TORSIONAL EXCITATION </h2>
+          <h3>Laden  </h3>
+        <div class="container">
+            <div class="calculator-container">
+        <label for="angleA7">1.Side view, UJ1 angle:</label>
+        <input type="number" id="angleA7" name="angleA7" step="any" required><br>
+
+        <label for="angleB7">2.Top view, UJ1 angle:</label>
+        <input type="number" id="angleB7" name="angleB7" step="any" required><br>
+
+        <label for="angleC7">3.Side view, UJ2 angle:</label>
+        <input type="number" id="angleC7" name="angleC7" step="any" required><br>  
+
+        <label for="angleD7">4.Top view, UJ2 angle:</label>
+        <input type="number" id="angleD7" name="angleD7" step="any" required><br>
+
+        <label for="angleE7">5.Side view, UJ3 angle:</label>
+        <input type="number" id="angleE7" name="angleE7" step="any" required><br>
+
+        <label for="angleF7">6.Top view, UJ3 angle:</label>
+        <input type="number" id="angleF7" name="angleF7" step="any" required><br>
+
+
+        <label for="angleG7">7.Propeller shaft speed (considering same as Flyup) (rpm):</label>
+        <input type="number" id="angleG7" name="angleG7" step="any" required><br>
+        <label for="myDropdown7">PHASE:</label>
+          <select id="myDropdown7">
+              <option value="PP">P-P</option>
+              <option value="CP">C-P</option>
+
+          </select>
+    </div>
+    <div class="calculator-container">
+        <h3>Unladen</h3>
+        <label for="angleA7u">1.Side view, UJ1 angle:</label>
+        <input type="number" id="angleA7u" name="angleA7u" step="any" required><br>
+
+        <label for="angleB7u">2.Top view, UJ1 angle:</label>
+        <input type="number" id="angleB7u" name="angleB7u" step="any" required><br>
+
+        <label for="angleC7u">3.Side view, UJ2 angle:</label>
+        <input type="number" id="angleC7u" name="angleC7u" step="any" required><br>
+
+        <label for="angleD7u">4.Top view, UJ2 angle:</label>
+        <input type="number" id="angleD7u" name="angleD7u" step="any" required><br>
+
+        <label for="angleE7u">5.Side view, UJ3 angle:</label>
+        <input type="number" id="angleE7u" name="angleE7u" step="any" required><br>
+
+        <label for="angleF7u">6.Top view, UJ3 angle:</label>
+        <input type="number" id="angleF7u" name="angleF7u" step="any" required><br>
+
+        <label for="angleG7u">7.Propeller shaft speed (considering same as Flyup) (rpm):</label>
+        <input type="number" id="angleG7u" name="angleG7u" step="any" required><br>
+
+        <label for="myDropdown7u">PHASE:</label>
+        <select id="myDropdown7u">
+            <option value="PP">P-P</option>
+            <option value="CP">C-P</option>
+        </select>
+    </div> 
+            </div> 
+
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+    </form>
+
+    <div id="result"></div> 
+      <style>
+          .highlighted {
+              background-color: green;
+              /* Add any other styling you want */
+          }
+      </style>
+
+    <script src="calculator2.js"></script> 
+</body>
+</html>

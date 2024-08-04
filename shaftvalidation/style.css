@@ -1,0 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+a:hover {
+  color: hotpink;
+}
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+  background-size: 100% 100%;
+  background-image:url("6X4\ WRA.jpg");
+  background-repeat: no-repeat;
+  width: auto;
+  height: 1200px;
+}
+#container {
+  text-align: center;
+  padding: 20px;
+ 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  }
+#container1 {
+  margin:auto;
+  padding: 20px;
+  background-color: #61b5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width:600px;
+  height:200px;
+  align-items: center;
+  border: 3px solid black;
+  }
+
+.calculator {
+  display: none;
+}
+
+button {
+  background-color: #37e208;
+    margin-left: auto;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+
+}

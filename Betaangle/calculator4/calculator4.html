@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equivalent Angles Calculator</title>
+    <link rel="stylesheet" href="calculator4.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <form id="angleForm">
+        <h2>Resultant Angle Calculator for 4 shafts </h2>
+
+        <div class="container">
+            <div class="calculator-container">
+                <h3>Laden</h3>
+        <label for="angleA">1.Angle on side view, Engine angle to 1st shaft:</label>
+        <input type="number" id="angleA" name="angleA" step="any" required><br>
+
+        <label for="angleB">2.Angle on Top view, Engine angle to 1st shaft:</label>
+        <input type="number" id="angleB" name="angleB" step="any" required><br>
+
+        <label for="angleC">3.Angle on side view, 1st shaft to 2nd shaft:</label>
+        <input type="number" id="angleC" name="angleC" step="any" required><br>  
+
+        <label for="angleD">4.Angle on Top view, 1st shaft to 2nd shaft:</label>
+        <input type="number" id="angleD" name="angleD" step="any" required><br>
+
+        <label for="angleE">5.Angle on side view,2nd shaft to 3rd shaft:</label>
+        <input type="number" id="angleE" name="angleE" step="any" required><br>
+
+        <label for="angleF">6.Angle on Top view, 2nd shaft to 3rd shaft:</label>
+        <input type="number" id="angleF" name="angleF" step="any" required><br>
+
+        <label for="angleG">7.Angle on Side view, 3rd shaft to 4th shaft:</label>
+        <input type="number" id="angleG" name="angleG" step="any" required><br>
+
+        <label for="angleH">8.Angle on Top view, 3rd shaft to 4th shaft:</label>
+        <input type="number" id="angleH" name="angleH" step="any" required><br>
+
+        <label for="angleI">9.Angle on Side view, 4th shaft to pinion:</label>
+        <input type="number" id="angleI" name="angleI" step="any" required><br>
+
+        <label for="angleJ">10.Angle on Top view, 4th shaft to pinion:</label>
+        <input type="number" id="angleJ" name="angleJ" step="any" required><br>
+                </div>
+                <div class="calculator-container">
+                    <h3>Unladen</h3>
+                    <label for="angleAu">1. Angle on side view, Engine angle to 1st shaft:</label>
+                    <input type="number" id="angleAu" name="angleAu" step="any" required><br>
+
+                    <label for="angleBu">2. Angle on Top view, Engine angle to 1st shaft:</label>
+                    <input type="number" id="angleBu" name="angleBu" step="any" required><br>
+
+                    <label for="angleCu">3. Angle on side view, 1st shaft to 2nd shaft:</label>
+                    <input type="number" id="angleCu" name="angleCu" step="any" required><br>  
+
+                    <label for="angleDu">4. Angle on Top view, 1st shaft to 2nd shaft:</label>
+                    <input type="number" id="angleDu" name="angleDu" step="any" required><br>
+
+                    <label for="angleEu">5. Angle on side view, 2nd shaft to 3rd shaft:</label>
+                    <input type="number" id="angleEu" name="angleEu" step="any" required><br>
+
+                    <label for="angleFu">6. Angle on Top view, 2nd shaft to 3rd shaft:</label>
+                    <input type="number" id="angleFu" name="angleFu" step="any" required><br>
+
+                    <label for="angleGu">7. Angle on Side view, 3rd shaft to 4th shaft:</label>
+                    <input type="number" id="angleGu" name="angleGu" step="any" required><br>
+
+                    <label for="angleHu">8. Angle on Top view, 3rd shaft to 4th shaft:</label>
+                    <input type="number" id="angleHu" name="angleHu" step="any" required><br>
+
+                    <label for="angleIu">9. Angle on Side view, 4th shaft to pinion:</label>
+                    <input type="number" id="angleIu" name="angleIu" step="any" required><br>
+
+                    <label for="angleJu">10. Angle on Top view, 4th shaft to pinion:</label>
+                    <input type="number" id="angleJu" name="angleJu" step="any" required><br>
+                    </div> 
+            </div> 
+
+        <button type="button" onclick="calculateEquivalentAngles()">Calculate</button>
+    </form>
+
+    <div id="result"></div> 
+      <style>
+          .highlighted {
+              background-color: green;
+              /* Add any other styling you want */
+          }
+      </style>
+
+    <script src="calculator4.js"></script> 
+</body>
+</html>
